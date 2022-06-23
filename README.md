@@ -1,2 +1,2 @@
-# bootcamp-santander-desafio-github
-Desafio de projeto sobre Git/GitHub do Bootcamp Santander Java Full-stack
+# Repositório de Desafio de Projeto sobre Git/GitHub 🚀🚀
+Desafio DIO de projeto sobre Git/GitHub do Bootcamp Santander Java Full-stack
