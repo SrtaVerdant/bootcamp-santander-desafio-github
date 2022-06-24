@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundmentos - align self</title>
+
+    <style>
+        .flex-container{
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .align-container{
+            align-items: center;
+        }
+        .item{
+            background-color: brown;
+            color: white;
+            font-size: 24px;
+            text-align: center ;
+            margin: 5px;
+        }
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .strecht{
+            align-self: stretch;
+        }
+        .auto{
+            align-self: auto;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <section class="flex-container align-container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Repositório de Desafio de Projeto sobre Git/GitHub</div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item strecht">Repositório de Desafio de Projeto sobre Git/GitHub</div>
+        <div class="item end">ITEM 4</div>
+    </section>
+
+    <section class="flex-container">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item end">ITEM 4</div>]
+        <div class="item strecht">Repositório de Desafio de Projeto sobre Git/GitHub</div>
+    </section>
+
+    <h1>column</h1>
+    <section class="flex-container align-container column">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Repositório de Desafio de Projeto sobre Git/GitHub</div>
+        <div class="item auto">ITEM 4</div>
+    </section>
+
+    <section class="flex-container column">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item strecht">Repositório de Desafio de Projeto sobre Git/GitHub</div>
+        <div class="item end">ITEM 4</div>
+    </section>
+
+    <section class="flex-container column">
+        <div class="item center">AAA</div>
+        <div class="item start">123</div>
+        <div class="item end">ITEM 4</div>]
+        <div class="item strecht">Repositório de Desafio de Projeto sobre Git/GitHub</div>
+    </section>
+</body>
+</html>

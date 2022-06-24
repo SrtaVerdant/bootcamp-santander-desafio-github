@@ -1,7 +1,58 @@
-#tituloprincipal, .subtitulo, .post{
-    color: rgb(219, 20, 20);
+.subtitulo, .post{
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana;
+    margin: auto;
+    padding: 15px, 10px, 5px, 0;
+    max-width: auto;
+}
+
+.titulo{
+    background-color: rgb(126, 125, 125);
+    text-align: center;
+    color: rgb(207, 64, 83);
+    border-bottom: 1px solid #000;
+}
+
+.post{
+    background-color: #fff;
+    border: 3px solid rgb(102, 95, 95);
+   
+}
+
+#img2{
+    float: right;
+    height: 15rem;
+    width: 23rem;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(19, 18, 18);
+}
+.lista{
+    list-style-type: none;
+}
+
+#l{
+    list-style-image: url("../img/linkedin.png");
+}
+
+#e{
+    list-style-image: url("../img/email.png");
+}
+
+#g{
+    list-style-image: url("../img/github.png");
+}
+
+p{
+    padding-left: 15px;  
 }
