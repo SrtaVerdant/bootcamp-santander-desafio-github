@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    margin: 0;
+    min-width: 250px;
+    background-color: #ddcfcf;
+}
+
+header {
+    background-color: #251818;
+    padding: 30px 40px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+header h2 {
+    width: 100%;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 10px;
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+header span {
+    padding: 0px 0px 0px 40px;
+    width: 10%;
+    color: #555;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+header span i {
+    color: #fff;
+    font-size: 30pt;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    padding: 12px 0px;
+    list-style-type: none;
+    background-color: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    line-height: 30px;
+}
+
+ul li:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+ul li:hover {
+    background-color: #ddd;
+}
+
+ul li.checked {
+    background-color: #888;
+    color: #fff;
+}
+
+ul li span {
+    width: 80%;
+}
+
+ul li i {
+    width: 50px;
+    text-align: center;
+}
+
+.check {
+    color: #d1d1d1;
+    pointer-events: none;
+}
+
+.done {
+    color: #349223;
+}
+
+.done-span {
+    text-decoration: line-through;
+    pointer-events: none;
+}
+
+.close {
+    color: #f00;
+}
