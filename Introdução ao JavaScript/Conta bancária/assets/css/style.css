@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600&display=swap');
+
+body {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    background-color: #b8bef1 !important;
+	
+}
+
+.layout{
+    border: 5px solid rgb(100, 109, 233);
+    border-radius: 5px;
+    width: 40rem;
+    height: 30rem;
+    font-family: 'Quicksand', sans-serif;
+	padding: 30px;
+	margin: 0;
+    background-color: #9fa7ee;
+   
+}
+
+div .form-control{
+    margin: 10px 0;
+}
+
+button{
+    padding: 20px 50px !important;
+    border-radius: 10px;
+    margin: 10px !important;
+   
+}
+
+.botao{
+    margin: 15px !important;
+}
+
+.check-box{
+    margin-top: 1rem !important;
+}
+
+.mostrasaldo{
+    text-align: center;
+}
+/* @media width:900px {
+    
+} */

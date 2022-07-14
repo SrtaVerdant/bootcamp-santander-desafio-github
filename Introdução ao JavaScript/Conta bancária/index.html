@@ -1,47 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conta Bancária</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conta Bancária</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    </head>
 
-<body>
-    <form class="form-row">
-        <div class="row">
-            <div class="col-md-6">
-                <label for="validationCustom01">Agência</label>
-                <input type="text" class="form-control" id="agencia" placeholder="Digite sua agência" value="" >
-            </div>
-            <div class="col-md-6">
-                <label for="validationCustom02">Conta</label>
-                <input type="text" class="form-control" id="conta" placeholder="Digite sua conta" value="" value="" >
-            </div>
-       </div>
-        <div class="row">
-            <div class="col-md-12 custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Conta Poupança</label>
-            </div>
-            
+    <body>
+        <div class="layout" id="card">
+            <form class="form-row">
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="validationCustom01">Agência</label>
+                        <input type="text" class="form-control" id="agencia" placeholder="Digite sua agência" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="validationCustom02">Conta</label>
+                        <input type="text" class="form-control" id="conta" placeholder="Digite sua conta" value="" value="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <label for="validationCustom02">Valor</label>
+                        <input type="text" class="form-control" id="conta" placeholder="R$ 0,00" value="" value="">
+                    </div>
+                </div>
+                <div class="row check-box">
+                    <div class="col-md-6 custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="tipoconta" id="ContaCorrente" value="Conta Corrente">
+                        <label class="custom-control-label" for="ContaCorrente">Conta Corrente</label>
+                    </div>
+                    <div class="col-md-6 custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" name="tipoconta" id="contaPoupanca" value="Conta Poupança">
+                        <label class="custom-control-label" for="contaPoupanca">Conta Poupança</label>
+                    </div>
+                </div>
+               <div class="row botao">
+                    <div class="col-md-4">
+                        <button class="btn btn-light" type="button">Depósito</button>
+                    </div>
+                    <div class="col-md-4">
+                        
+                    </div>
+                    <div class="col-md-4">
+                        <button class="btn btn-light" type="button">Saldo</button>
+                    </div>
+                </div>
+                <div class="mostrasaldo" style="display: none;">
+                    <span>MOSTRAR SALDO AQUI</span>
+                </div>
+               
+            </form>
         </div>
-        <adiv class="row">
-            <div class="col-md-12 custom-control custom-checkbox">
-                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                <label class="custom-control-label" for="customCheck1">Conta Poupança</label>
-            </div>
-        </adiv>
-        
-        <button class="btn btn-primary" type="button">Realiza primeiro depósito</button>
-    </form>
-</body>
-<script src="./assets/js/scripts.js">
 
-    
-</script>
+        
+    </body>
+
+    <script src="./assets/js/scripts.js">
+
+
+    </script>
 
 </html>
