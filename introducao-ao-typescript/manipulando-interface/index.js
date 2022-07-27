@@ -30,3 +30,36 @@ input.addEventListener('input', (event) => {
     const i = event.currentTarget;
     console.log(i.value);
 });
+//Generic types
+function adicionaApendiceALista(array, valor) {
+    return array.map(item => item + valor);
+}
+adicionaApendiceALista([1, 2, 3], 1);
+function redirecione(usuario) {
+    if ('cargo' in usuario) {
+        // redirecionar para usuário ADM
+    }
+    else {
+        // redirecionar para usuário normal
+    }
+}
+function redirecionaFuncionario(usuario) {
+    if (usuario.cargo) {
+        //redirecionar para rota de funcionario
+    }
+    //redirecionar para rota de não funcionario
+}
+class Meugato {
+    constructor(nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+}
+// utilizando o Jquery
+// import $ from 'jquery';
+// $.fn.extend({
+//     novaFuncao(){
+//         console.log('Chamou função');
+//     }
+// });
+// $('body').novaFuncao();

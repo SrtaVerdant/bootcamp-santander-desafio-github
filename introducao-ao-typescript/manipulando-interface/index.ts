@@ -63,3 +63,75 @@ function adicionaApendiceALista<T>(array: any[], valor: T) { // quando coloca na
 }
 
 adicionaApendiceALista([1, 2, 3], 1)
+
+
+//Condicional com os parametros
+
+interface IUsuario {
+    id: number;
+    email: string;
+}
+
+interface IAdmin extends IUsuario{
+    cargo: 'gerente' | 'coordenador' | 'supervisor';
+}
+
+function redirecione(usuario: IUsuario | IAdmin) {
+    if ('cargo' in usuario) {
+        // redirecionar para usuário ADM
+    }else{
+        // redirecionar para usuário normal
+    }
+
+}
+
+// utilizando o caractere "?"
+
+interface ITipoFuncionario {
+    id: number;
+    email: string;
+    cargo?: 'gerente' | 'coordenador' | 'supervisor' | 'operador'; // O uso do ? torna o atributo opcional
+}
+
+function redirecionaFuncionario(usuario: ITipoFuncionario) {
+    if (usuario.cargo) {
+        //redirecionar para rota de funcionario
+    }
+
+    //redirecionar para rota de não funcionario
+}
+
+// Uso de readonly e private
+
+interface Gato{
+    readonly nome: string;
+    readonly idade: number;
+    readonly brinquedoFavorito?: string;
+
+}
+
+type GatoSomenteLeitura = {
+    readonly [K in keyof Gato]: Gato[K];
+}
+
+class Meugato implements GatoSomenteLeitura {
+    idade;
+    nome;
+
+    constructor(nome:string, idade:number) {
+       this.nome = nome;
+       this.idade = idade;
+    }
+}
+
+// utilizando o Jquery
+// import $ from 'jquery';
+
+// $.fn.extend({
+//     novaFuncao(){
+//         console.log('Chamou função');
+//     }
+// });
+
+// $('body').novaFuncao();
+
