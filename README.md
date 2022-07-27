@@ -6,7 +6,9 @@
 
 - [desafio-de-projeto-instagram] -> Desafio de projeto em CSS, reciando página inicial do Instagram.
 
-- [introducao-ao-typescript] -> Conteúdo de JavaScript.
+- [introducao-ao-javascript] -> Conteúdo de JavaScript.
+
+- [introducao-ao-typescript] -> Conteúdo de TypeScript.
 
 - [desafio-de-projeto-typescript] -> Desafio de projeto em TypeScript, adivinhe o número.
 
