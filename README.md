@@ -12,4 +12,6 @@
 
 - [desafio-de-projeto-typescript] -> Desafio de projeto em TypeScript, adivinhe o número.
 
+- [introducao-ao-angular-8] -> Conteúdo de Angular 8.
+
 
