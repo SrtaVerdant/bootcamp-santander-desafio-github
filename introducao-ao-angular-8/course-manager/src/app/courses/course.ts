@@ -7,4 +7,5 @@ export class Course{
     duracao: number;
     avaliacao: number;
     dataLancamento: string;
+    descricao: string;
 }
