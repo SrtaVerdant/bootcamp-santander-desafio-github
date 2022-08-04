@@ -32,7 +32,10 @@
             <td>{{course.duracao}}</td>
             <td>{{course.dataLancamento | date: 'dd/MM/yyyy'}}</td>  <!-- | pipe padrão do angular -->
             <td>
-            <app-star [avaliacao]="course.avaliacao"></app-star>
+                <app-star [avaliacao]="course.avaliacao"></app-star>
+            </td>
+            <td>
+                <a [routerLink]="['/courses/info', course.id]" class="btn btn-primary">Editar</a>
             </td>
         </tr>
     </tbody>
